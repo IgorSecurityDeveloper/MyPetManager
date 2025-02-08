@@ -1,6 +1,19 @@
+import React, { useState } from 'react';
+import { useAuth } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 import './Login.css';
 
 function Login() {
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    login(name, password);
+    navigate("/Dashboard");
+  };
   return (
    
      
@@ -12,17 +25,17 @@ function Login() {
   </p>
   <form class="form">
     <div class="input-group">
-      <label for="username">Email</label>
-      <input type="text" name="username" id="username" placeholder="" />
+      <label for="name">Email</label>
+      <input type="text" name="name" id="name" />
     </div>
     <div class="input-group">
       <label for="password">Senha</label>
-      <input type="password" name="password" id="password" placeholder="" />
+      <input type="password" name="password" id="password" />
       <div class="forgot">
-        <a rel="noopener noreferrer" href="#">Esqueceu a senha?</a>
+        <a rel="noopener noreferrer" href="#">Esqueceu a senha?</a> {/* Criar uma página e um link para o Esqueceu A senha */}
       </div>
     </div>
-    <button class="sign">Entrar</button>
+    <button class="sign" onClick={login}>Entrar</button>
   </form>
   <div class="social-message">
     <div class="line"></div>
@@ -41,8 +54,10 @@ function Login() {
 </button>
   <p class="signup">
     Ainda não tem uma conta?
-    <a rel="noopener noreferrer" href="#" class=""> Cadastre-se</a>
-  </p>
+    <a href='/CreateAccount'> Cadastre-se</a>
+        
+      </p>
+  
 </div>
 
  

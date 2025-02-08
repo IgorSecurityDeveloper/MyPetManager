@@ -2,6 +2,7 @@
   "dependencies": {
     "expo": "^52.0.30",
     "express": "^4.21.2",
-    "react": "^19.0.0"
+    "react": "^19.0.0",
+    "react-route": "^1.0.3"
   }
 }
