@@ -10,8 +10,8 @@
       <br>TypeScript
     </td>
     <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/redux-icon.svg" alt="icon" width="76" height="76" />
-      <br>Redux
+        <img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="icon" width="76" height="76" />
+      <br>C#
     </td>
     <td align="center" width="96">
         <img src="https://techstack-generator.vercel.app/sass-icon.svg" alt="icon" width="76" height="76" />
@@ -29,10 +29,6 @@
         <img src="https://techstack-generator.vercel.app/nginx-icon.svg" alt="icon" width="76" height="76" />
       <br>Node.js
     </td>
-    <td align="center" width="96">
-        <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="icon" width="76" height="76" />
-      <br>Java
-    </td>
     
  </tr>
 </table>
@@ -40,6 +36,7 @@
 
 ## User Interface planing
   <div align="center"> 
-   COMING SOON...
- 
+   
+ ![UI login](https://github.com/user-attachments/assets/26a6d330-b52b-462c-afce-f02c4e396b49)
+
 </div>
