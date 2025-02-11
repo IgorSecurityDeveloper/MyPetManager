@@ -23,9 +23,9 @@
 <p>Database	PostgreSQL / MongoDB	SQL for structured data, NoSQL for flexibility.</p>
 <p>Authentication	JWT + OAuth	Secure user authentication and session management.</p>
 <p>Cloud & Hosting	AWS / Azure	Scalable cloud infrastructure.</p>
-<p>Security	Helmet.js, rate limiting, OWASP best practices	Prevent XSS, SQL injection, and brute-force attacks.</p>
+<p>Security	Helmet.js, rate limiting, OWASP best practices to Prevent XSS, SQL injection, and brute-force attacks.</p>
 <p>Caching	Redis	Speed up responses and reduce database load.</p>
-<p>CI/CD	GitHub Actions / Docker	Automated testing and deployment.</p>
+<p>CI/CD GitHub Actions / Docker	Automated testing and deployment.</p>
 <p>Internationalization	next-i18next (Frontend), nestjs-i18n (Backend), IStringLocalizer (C#)	Multi-language support (English, Spanish, Portuguese).</p>
 <br>
 <h1>3️⃣ Development Roadmap</h1>
