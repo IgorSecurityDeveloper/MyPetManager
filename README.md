@@ -110,7 +110,7 @@
 </p>Backend (C#) → IStringLocalizer for localization in ASP.NET Core.</p>
 </p>Auto Language Detection → Based on user preference, browser settings, or database-stored preference.</p>
 <br>
-<h1>🚀 Conclusion</h1>
+<h1>Conclusion</h1>
 <h1>This strategy ensures that MyPetManager is:</h1>
 <p>✅ Fast → Optimized queries, caching (Redis), SSR.</p>
 <p>✅ Secure → Proper authentication, OWASP best practices.</p>
