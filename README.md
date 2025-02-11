@@ -6,7 +6,7 @@
 
 </div>
 <br>
-<h1>🚀 Development & Engineering Strategy - MyPetManager</h1>
+<h2>Development & Engineering Strategy - MyPetManager</h2>
 <h2>1️⃣ Key Requirements</h2>
 <h3>To ensure MyPetManager is robust, fast, and secure, the development strategy will focus on:</h3>
 <p>✔ Scalability – Microservices and modular architecture.</p>
