@@ -116,4 +116,93 @@
 <p>✅ Secure → Proper authentication, OWASP best practices.</p>
 <p>✅ Scalable → Modular microservices for backend, cloud-based infrastructure.</p>
 <p>✅ User-Friendly → Multi-language support, cross-device compatibility.</p>
+<br>
+<h2>📂 Folder Structure and Best Practices for MyPetManager</h2>
+<h3>1️⃣ Frontend Folder Structure for Next.js</h3>
+
+<pre>
+/my-pet-manager
+  ├── /public                # Public static files (images, fonts, etc.)
+  ├── /src
+  │   ├── /components        # Reusable components (buttons, forms, headers)
+  │   ├── /pages             # Next.js pages (routes for user navigation)
+  │   │   ├── index.tsx      # Home page
+  │   │   ├── login.tsx      # Login page
+  │   │   └── dashboard.tsx  # Dashboard page
+  │   ├── /styles            # Styles (CSS, SCSS files)
+  │   ├── /services          # Functions or APIs for interacting with the backend
+  │   ├── /utils             # Helper functions (validators, utilities, etc.)
+  │   ├── /context           # Global state management (React Context API)
+  │   ├── /hooks             # Custom React hooks
+  │   ├── /i18n              # Internationalization (i18n)
+  │   └── _app.tsx           # Root component of Next.js app
+  ├── /public                # Static files (images, fonts, etc.)
+  ├── .env                   # Environment variables
+  ├── next.config.js         # Next.js specific configuration
+  ├── package.json           # Dependencies and scripts
+  └── tsconfig.json          # TypeScript configuration
+</pre>
+
+<h4>Explanation of Key Folders:</h4>
+<ul>
+  <li><strong>/components</strong>: Contains reusable components (buttons, forms, headers) that can be used across different pages.</li>
+  <li><strong>/pages</strong>: Next.js uses file-based routing, meaning each .tsx file in this folder represents a page accessible via a URL.</li>
+  <li><strong>/styles</strong>: Styles for your app, can be in CSS or SCSS depending on your preference.</li>
+  <li><strong>/services</strong>: Functions or modules to handle HTTP requests to the backend (for example, using <code>axios</code> or <code>fetch</code>).</li>
+  <li><strong>/i18n</strong>: Configuration files for internationalization, defining text and translations for different languages in your app.</li>
+  <li><strong>_app.tsx</strong>: Root component, where you can wrap the whole application with context providers or theme settings.</li>
+</ul>
+
+<h3>2️⃣ Backend Folder Structure for Nest.js</h3>
+
+<pre>
+/my-pet-manager-backend
+  ├── /src
+  │   ├── /auth                # Authentication module (JWT, OAuth)
+  │   │   ├── auth.module.ts   # Authentication module
+  │   │   ├── auth.service.ts  # Authentication logic
+  │   │   └── auth.controller.ts # Authentication endpoints
+  │   ├── /users               # Users module
+  │   │   ├── users.module.ts  # Users module
+  │   │   ├── users.service.ts # Users logic
+  │   │   ├── users.controller.ts # Users endpoints
+  │   │   └── user.entity.ts   # User entity (ORM)
+  │   ├── /pets                # Pets module (business model)
+  │   │   ├── pets.module.ts   # Pets module
+  │   │   ├── pets.service.ts  # Pets logic
+  │   │   ├── pets.controller.ts # Pets endpoints
+  │   │   └── pet.entity.ts    # Pet entity
+  │   ├── /database            # Database connection
+  │   │   └── database.module.ts # Database configuration (ORM, etc.)
+  │   ├── /common              # Common modules (filters, interceptors, pipes, etc.)
+  │   ├── /i18n                # Internationalization (i18n)
+  │   ├── /config              # Environment configuration files
+  │   └── app.module.ts        # Root module for Nest.js
+  ├── .env                     # Environment variables
+  ├── tsconfig.json            # TypeScript configuration
+  ├── package.json             # Dependencies and scripts
+  └── nest-cli.json            # Nest.js CLI configuration
+</pre>
+
+<h4>Explanation of Key Folders:</h4>
+<ul>
+  <li><strong>/auth</strong>: Handles all authentication logic (JWT, OAuth, etc.).</li>
+  <li><strong>/users</strong>: Manages users in the system, such as registration, listing, editing, etc.</li>
+  <li><strong>/pets</strong>: Manages pets, their characteristics, and associated data (e.g., managing pets in clinics).</li>
+  <li><strong>/database</strong>: Contains database connection settings and ORM configuration.</li>
+  <li><strong>/common</strong>: Contains modules used globally across the application, such as filters, interceptors, and pipes for validation.</li>
+  <li><strong>/i18n</strong>: Translation files and configuration for internationalization, ensuring the backend API can respond in different languages.</li>
+  <li><strong>app.module.ts</strong>: The root module that imports all other modules in the backend and configures the app.</li>
+</ul>
+
+<h3>3️⃣ Best Practices for Architecture and Organization</h3>
+<ul>
+  <li><strong>Modularity</strong>: Keep the project modular both on the frontend and backend. Each feature or domain (such as users, pets, etc.) should have its own module, making it easier to expand in the future.</li>
+  <li><strong>Reusability</strong>: Components, hooks, API functions, and utility functions should be reusable to avoid code duplication.</li>
+  <li><strong>Separation of Concerns</strong>: Follow the <strong>SRP (Single Responsibility Principle)</strong>, where each module or file has a single responsibility, making the codebase easier to maintain.</li>
+  <li><strong>Internationalization (i18n)</strong>: Store translation files in dedicated folders both on the frontend (using <code>next-i18next</code>) and backend (using <code>nestjs-i18n</code>) to ensure that all texts are easily manageable.</li>
+  <li><strong>Configuration Files</strong>: Store sensitive configuration, such as environment variables, in <code>.env</code> files, and never hardcode them in the code.</li>
+</ul>
+
+
 
