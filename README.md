@@ -1,9 +1,11 @@
 <h1>User Interface planing</h2>
+<br>
   <div align="center"> 
    
  ![UI login](https://github.com/user-attachments/assets/26a6d330-b52b-462c-afce-f02c4e396b49)
 
 </div>
+<br>
 <h1>🚀 Development & Engineering Strategy - MyPetManager</h1>
 <h2>1️⃣ Key Requirements</h2>
 <h3>To ensure MyPetManager is robust, fast, and secure, the development strategy will focus on:</h3>
@@ -12,43 +14,23 @@
 <p>✔ Performance – Optimized database queries and caching strategies.</p>
 <p>✔ SEO & Accessibility – Server-side rendering (SSR) and multilingual support (i18n).</p>
 <p>✔ Cross-device Support – Fully responsive UI for web access on any device.</p>
-
-2️⃣ Technology Stack
-Layer	Technology	Purpose
-Frontend	Next.js (React)	SSR for SEO, fast UI rendering, and easy language switching (i18n).
-Backend	Nest.js (Node.js)	REST API, authentication, business logic, and microservices architecture.
-Backend	ASP.NET Core (C#)	Alternative backend services, ensuring performance and security.
-Database	PostgreSQL / MongoDB	SQL for structured data, NoSQL for flexibility.
-Authentication	JWT + OAuth	Secure user authentication and session management.
-Cloud & Hosting	AWS / Azure	Scalable cloud infrastructure.
-Security	Helmet.js, rate limiting, OWASP best practices	Prevent XSS, SQL injection, and brute-force attacks.
-Caching	Redis	Speed up responses and reduce database load.
-CI/CD	GitHub Actions / Docker	Automated testing and deployment.
-Internationalization	next-i18next (Frontend), nestjs-i18n (Backend), IStringLocalizer (C#)	Multi-language support (English, Spanish, Portuguese).
-3️⃣ Development Roadmap
-Phase	Objective	Estimated Time	Completed	Completion Date
-1	Planning and Architecture - Define system requirements, features, and technology stack.	1-2 weeks	☐	
-2	Initial Setup and Infrastructure - Configure repositories, CI/CD, databases, and cloud hosting.	2-3 weeks	☐	
-3	Backend Development - Build APIs with Nest.js (Node.js) and ASP.NET Core (C#), implement authentication, role-based access, and business logic.	4-6 weeks	☐	
-4	Frontend Development - Develop UI with Next.js (React), ensure responsiveness, integrate with APIs.	4-6 weeks	☐	
-5	Internationalization (i18n) Implementation - Add language support (English, Spanish, Portuguese) using next-i18next (Frontend), nestjs-i18n (Nest.js), and IStringLocalizer (C#).	2-3 weeks	☐	
-6	Security, Testing, and Optimization - Perform security audits, unit/integration testing, and performance optimizations.	2-3 weeks	☐	
-7	Deployment and Launch - Deploy to production, monitor performance, and finalize documentation.	2 weeks	☐	
-Total	Fully functional SaaS application 🚀	17-25 weeks (~4-6 months)	-	-
-🌍 Internationalization (i18n) Strategy
-To ensure language adaptability, the following i18n approach will be implemented:
-
-Frontend (Next.js) → next-i18next for real-time translation & language switching.
-Backend (Nest.js) → nestjs-i18n for API response translations.
-Backend (C#) → IStringLocalizer for localization in ASP.NET Core.
-Auto Language Detection → Based on user preference, browser settings, or database-stored preference.
-🚀 Conclusion
-This strategy ensures that MyPetManager is:
-✅ Fast → Optimized queries, caching (Redis), SSR.
-✅ Secure → Proper authentication, OWASP best practices.
-✅ Scalable → Modular microservices for backend, cloud-based infrastructure.
-✅ User-Friendly → Multi-language support, cross-device compatibility.
-<h2>📌 Project Roadmap Summary - MyPetManager</h2>
+<br>
+<h1>2️⃣ Technology Stack</h1>
+<h2>Layer	Technology	Purpose</h2>
+<p>Frontend	Next.js (React)	SSR for SEO, fast UI rendering, and easy language switching (i18n).</p>
+<p>Backend	Nest.js (Node.js)	REST API, authentication, business logic, and microservices architecture.</p>
+<p>Backend	ASP.NET Core (C#)	Alternative backend services, ensuring performance and security.</p>
+<p>Database	PostgreSQL / MongoDB	SQL for structured data, NoSQL for flexibility.</p>
+<p>Authentication	JWT + OAuth	Secure user authentication and session management.</p>
+<p>Cloud & Hosting	AWS / Azure	Scalable cloud infrastructure.</p>
+<p>Security	Helmet.js, rate limiting, OWASP best practices	Prevent XSS, SQL injection, and brute-force attacks.</p>
+<p>Caching	Redis	Speed up responses and reduce database load.</p>
+<p>CI/CD	GitHub Actions / Docker	Automated testing and deployment.</p>
+<p>Internationalization	next-i18next (Frontend), nestjs-i18n (Backend), IStringLocalizer (C#)	Multi-language support (English, Spanish, Portuguese).</p>
+<br>
+<h1>3️⃣ Development Roadmap</h1>
+<h2>Phase	Objective	Estimated Time	Completed	Completion Date</h2>
+<h3>📌 Project Roadmap Summary - MyPetManager</h3>
 
 <table>
   <thead>
@@ -119,3 +101,19 @@ This strategy ensures that MyPetManager is:
     </tr>
   </tbody>
 </table>
+<br>
+<h1>🌍 Internationalization (i18n) Strategy</h1>
+<h2>To ensure language adaptability, the following i18n approach will be implemented:</h2>
+
+</p>Frontend (Next.js) → next-i18next for real-time translation & language switching.</p>
+</p>Backend (Nest.js) → nestjs-i18n for API response translations.</p>
+</p>Backend (C#) → IStringLocalizer for localization in ASP.NET Core.</p>
+</p>Auto Language Detection → Based on user preference, browser settings, or database-stored preference.</p>
+<br>
+<h1>🚀 Conclusion</h1>
+<h1>This strategy ensures that MyPetManager is:</h1>
+<p>✅ Fast → Optimized queries, caching (Redis), SSR.</p>
+<p>✅ Secure → Proper authentication, OWASP best practices.</p>
+<p>✅ Scalable → Modular microservices for backend, cloud-based infrastructure.</p>
+<p>✅ User-Friendly → Multi-language support, cross-device compatibility.</p>
+
