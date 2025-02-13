@@ -1,0 +1,54 @@
+# Node.js & Next.js
+node_modules/
+.next/
+out/
+dist/
+.npm/
+.npmrc
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.log
+logs/
+*.gz
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env.*.local
+
+# Nest.js
+/dist/
+.cache/
+*.tsbuildinfo
+
+# C# (.NET)
+bin/
+obj/
+*.suo
+*.user
+*.rsuser
+*.sln.ide
+.vscode/
+.ionide/
+.nuget/
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+packages/
+test/coverage/
+
+# Editor & Sistema
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+*.DS_Store
+Thumbs.db
+
+#expo
+.expo/
