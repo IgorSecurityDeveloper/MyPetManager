@@ -59,14 +59,14 @@
     </tr>
     <tr>
       <td><strong>3</strong></td>
-      <td><strong>Backend Development</strong> - Build APIs with Nest.js (Node.js) and ASP.NET Core (C#), implement authentication, role-based access, and business logic.</td>
+      <td><strong>Frontend Development</strong> - Develop UI with Next.js (React), ensure responsiveness, integrate with APIs.</td>
       <td>4-6 weeks</td>
       <td>☐</td>
       <td></td>
     </tr>
     <tr>
       <td><strong>4</strong></td>
-      <td><strong>Frontend Development</strong> - Develop UI with Next.js (React), ensure responsiveness, integrate with APIs.</td>
+      <td><strong>Backend Development</strong> - Build APIs with Nest.js (Node.js) and ASP.NET Core (C#), implement authentication, role-based access, and business logic.</td>
       <td>4-6 weeks</td>
       <td>☐</td>
       <td></td>
