@@ -6,7 +6,7 @@
 
 </div>
 <br>
-<h1>🚀 Development & Engineering Strategy - MyPetManager</h1>
+<h2>Development & Engineering Strategy - MyPetManager</h2>
 <h2>1️⃣ Key Requirements</h2>
 <h3>To ensure MyPetManager is robust, fast, and secure, the development strategy will focus on:</h3>
 <p>✔ Scalability – Microservices and modular architecture.</p>
@@ -110,7 +110,7 @@
 </p>Backend (C#) → IStringLocalizer for localization in ASP.NET Core.</p>
 </p>Auto Language Detection → Based on user preference, browser settings, or database-stored preference.</p>
 <br>
-<h1>🚀 Conclusion</h1>
+<h1>Conclusion</h1>
 <h1>This strategy ensures that MyPetManager is:</h1>
 <p>✅ Fast → Optimized queries, caching (Redis), SSR.</p>
 <p>✅ Secure → Proper authentication, OWASP best practices.</p>
@@ -255,7 +255,6 @@
 <h2>How to Utilize This Structure:</h2>
 <ul>
   <li>During development, you can start with <strong>Nest.js</strong> for most of the logic and integrate <strong>C#</strong> as the need for specific or high-performance features arises.</li>
-  <li>If you don't need all the functionality of C# immediately, you can begin with <strong>Nest.js</strong> and integrate <strong>C#</strong> later as the need emerges.</li>
 </ul>
 
 
