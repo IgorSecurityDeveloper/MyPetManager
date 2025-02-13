@@ -255,7 +255,6 @@
 <h2>How to Utilize This Structure:</h2>
 <ul>
   <li>During development, you can start with <strong>Nest.js</strong> for most of the logic and integrate <strong>C#</strong> as the need for specific or high-performance features arises.</li>
-  <li>If you don't need all the functionality of C# immediately, you can begin with <strong>Nest.js</strong> and integrate <strong>C#</strong> later as the need emerges.</li>
 </ul>
 
 
