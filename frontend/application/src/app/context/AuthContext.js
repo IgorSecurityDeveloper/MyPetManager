@@ -1,6 +1,6 @@
 'use client'
 
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext();
@@ -9,20 +9,37 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
 
-  const login = (user, password) => {
-    if (user === "admin@teste.com" && password === "1234") {
-      setUser({ user });
-      localStorage.setItem("user", JSON.stringify({ user }));
-      alert("Correto");
-    //   navigate("/Dashboard");
+  // Garantir que só execute no cliente
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedUser = localStorage.getItem("user");
+      if (storedUser) {
+        setUser(JSON.parse(storedUser));
+      }
+    }
+  }, []);
+
+  const login = (email, password) => {
+    if (email === "admin@teste.com" && password === "1234") {
+      const userData = { email };
+      setUser(userData);
+
+      if (typeof window !== "undefined") {
+        localStorage.setItem("user", JSON.stringify(userData));
+      }
+
+      alert("Login correto!");
+      navigate("/Dashboard");
     } else {
-      alert("Usuário e ou senha incorretos!");
+      alert("Usuário ou senha incorretos!");
     }
   };
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem("user");
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("user");
+    }
     navigate("/");
   };
 
