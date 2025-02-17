@@ -252,10 +252,4 @@
   <li><strong>Integration with Legacy Systems:</strong> If your system needs to interact with legacy APIs or libraries developed in C#, the dedicated C# folder allows you to keep that code separate and manageable.</li>
 </ul>
 
-<h2>How to Utilize This Structure:</h2>
-<ul>
-  <li>During development, you can start with <strong>Nest.js</strong> for most of the logic and integrate <strong>C#</strong> as the need for specific or high-performance features arises.</li>
-</ul>
-
-
 
