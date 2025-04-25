@@ -52,3 +52,26 @@ Thumbs.db
 
 #expo
 .expo/
+
+# Node modules (Vercel já instala as dependências)
+node_modules/
+
+# Pasta de build (Vercel gera automaticamente)
+dist/
+out/
+build/
+
+# Arquivos de log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Arquivos de ambiente (se não for seguro compartilhar)
+.env
+.env.local
+.env.*.local
+
+# Cache de dependências (pode ser pesado e desnecessário)
+.pnpm-store/
+.cache/

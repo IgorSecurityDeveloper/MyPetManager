@@ -1,13 +1,13 @@
-'use client'
+"use server";
 
 import React, { useState } from 'react';
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../authContext/page";
 import { useNavigate } from "react-router-dom";
-import '../../globals.scss';
-import './Login.css';
+import '../globals.css';
+// import './Login.css';
 
 function Login() {
-  const [name, setName] = useState("");
+  const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ function Login() {
     e.preventDefault();
 
     // Verifica se o login foi bem-sucedido antes de redirecionar
-    const success = login(name, password);
+    const success = login(user, password);
     if (success) {
       navigate("/Dashboard");
     }
@@ -36,13 +36,13 @@ function Login() {
 
       <form className="form" onSubmit={handleSubmit}>
         <div className="input-group">
-          <label htmlFor="name">Email</label>
+          <label htmlFor="user">Email</label>
           <input
             type="text"
-            name="name"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            name="user"
+            id="user"
+            value={user}
+            onChange={(e) => setUser(e.target.value)}
           />
         </div>
 

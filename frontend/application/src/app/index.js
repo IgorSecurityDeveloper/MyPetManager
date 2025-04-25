@@ -1,13 +1,15 @@
+
 'use client'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "./context/AuthContext";
-import Login from './Pages/Login/Login';
-import CreateAccount from "./Pages/CreateAccount/CreateAccount"
-import Dashboard from "./Pages/Dashboard/Dashboard";
-import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import { AuthProvider } from "./authContext/page";
+// import { AuthProvider } from "./context/AuthContext";
+import Login from './Login/page';
+import CreateAccount from "./CreateAccount/page"
+import Dashboard from "./Dashboard/page";
+import PrivateRoute from "./PrivateRoute/page";
 
-export default function Home() {
+export default function index() {
   return (
     <>
     <Router>
@@ -20,7 +22,6 @@ export default function Home() {
        </Routes>
        </AuthProvider>
      </Router>
-  
-    </>
+  </>
   );
 }
